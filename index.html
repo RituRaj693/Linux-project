@@ -1,0 +1,95 @@
+<html>
+<head>
+<style>
+
+
+.menudropdown1{
+width:80%;
+height:100px;
+margin:0px auto;
+}
+
+.menudropdown1 ul{
+	padding:0px;
+
+}
+
+.menudropdown1 ul li{
+	float:left;
+	background-color:black;
+	color:white;
+	width:200px;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+    list-style:none;
+	opacity:0.7;
+}
+.menudropdown1 ul li ul{
+	display:none;
+}
+.menudropdown1 ul li:hover > ul{
+	display:block;
+}
+
+.menudropdown1 ul li:hover{
+	background-color:#32CD32;
+	opacity:0.9;
+}
+.menudropdown1 ul li ul li{
+	position:relative;
+}
+.menudropdown1 ul li ul li ul{
+	position:absolute;
+	left:200px;
+	top:0px;
+}
+</style>
+</head>
+<body>
+<h1>type</h1>
+<form action = "/cgi-bin/terminal.cgi" method = "POST"> </br>
+enter first number : <input name="x" type="number"> </br>
+enter second number : <input name="y" type="number"> </br>
+enter cmd number : <input name="c" type="text"> </br>
+<input type = "submit" value ="ADD">
+</form>
+<div class="menudropdown1">
+<ul>
+	<li> Basic Operations 
+	     <ul>
+		    <li><a href="directory.html">Making Directory</a> </li>
+		
+			
+			<li><a href="file.html">createFile</a> </li>
+			<li><a href="#"> file content </a></li>
+			<li><a href="#"> change directory</a> </li>
+			<li><a href="#"> find command</a> </li>
+			<li><a href="#"> locate Command</a> </li>
+			<li><a href="#"> Regular expression</a> 
+			   <ul>
+			       <li><a href="#"> grep command</a> </li>
+			</ul>
+			</li>
+			</ul>
+			</li>
+	
+	 
+	
+	<li> Memory Management
+	     <ul>
+		 <li> Free space </li>
+		 <li> Random access memory (RAM) </li>
+		 <li> Logical Volume Manager </li>
+		 </ul>
+	</li>	
+	<li> Storage Management </li>
+	<li>Linux Administrator </li>
+	<li> Acess Terminal </li>
+</ul>
+</div>
+</body>
+</html>
+	
+	
+	
