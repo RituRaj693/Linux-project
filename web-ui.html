@@ -1,8 +1,20 @@
 <html>
 <head>
+<meta charset="utf-8">
+<title>web ui</title>
+<link rel="stylesheet"href="style.css">
+</head>
 <style>
 
-
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 .menudropdown1{
 width:80%;
 height:100px;
@@ -44,15 +56,25 @@ margin:0px auto;
 	left:200px;
 	top:0px;
 }
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
 </style>
 </head>
 <body>
-<h1>type</h1>
-<form action = "/cgi.bin/terminal.cgi" method = "POST"> </br>
-enter first number : <input name="x" type="number"> </br>
-enter second number : <input name="y" type="number"> </br>
-<input type = "submit" value ="ADD">
-</form>
+	
 
 
 <div class="menudropdown1">
@@ -89,8 +111,74 @@ enter second number : <input name="y" type="number"> </br>
 	<li> Acess Terminal </li>
 </ul>
 </div>
+
+<h1>Linux basic commands</h1>
+<table>
+  <tr>
+    <th>Commands</th>
+    <th>Commands Description</th>
+  </tr>
+  <tr>
+    <td>pwd</td>
+    <td>This command is use to see in which directory the current user present</td>
+  </tr>
+  <tr>
+    <td>ifconfig</td>
+    <td>to check the ip of system</td>
+  <tr>
+    <td>useradd</td>
+    <td>it is use tp add new user</td>
+  </tr>
+  <tr>
+    <td>mkdir</td>
+    <td>it is use to create new Directory</td>
+  </tr>
+  <tr>
+    <td>whoami</td>
+    <td>it is use to see which user is logdin</td>
+  </tr>
+  <tr>
+    <td>which</td>
+    <td>use to identify the location of exceutables</td>
+  </tr>
+  <tr>
+  <td>touch</td>
+  <td>it use to create empty file</td>
+  </tr>
+  <tr>
+  <td>ping</td>
+  <td>it is use verify the connection between two system </td>
+  </tr>
+  <tr>
+  <td>rmdir</td>
+  <td>to remove the directory</td>
+  </tr>
+  <tr>
+  <td>cat</td>
+  <td>it is use to read the content of file</td>
+  </tr>
+  <tr>
+  <td>who</td>
+  <td>who command shows information about users who are currently logged in</td>
+  </tr>
+  <tr>
+  <td>cal</td>
+  <td>it is use to see the calender</td>
+  </tr>
+  <tr>
+  <td>date</td>
+  <td>it is use to see the date</td>
+  </tr>
+</table>
+<div class="box">
+<h1>execute your command here</h1>
+<form>
+<input type="text" name=""placeholder="Type your command...">
+<input type="submit" name="" value="search">
+</form>
+
 </body>
 </html>
 	
 	
-	
+	 
